@@ -10,5 +10,8 @@ install:
     - "sudo apt-get install cython netcdf-bin libnetcdf-dev libhdf5-serial-dev"
     - "pip install --upgrade -r requirements.txt"
 
-script: "cd test && py.test"
+script: 
+    - "cd test && py.test test_nc2nc.py"
+    - "ls -R"
+    - "cd test && py.test test_nccompress.py"
 
