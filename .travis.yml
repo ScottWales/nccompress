@@ -10,5 +10,5 @@ install:
     - "sudo apt-get install cython netcdf-bin libnetcdf-dev libhdf5-serial-dev"
     - "pip install -r requirements.txt"
 
-script: "py.test"
+script: "py.test test"
 
