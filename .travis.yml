@@ -7,6 +7,7 @@ python:
     - "2.7"
 
 install:
+    - "sudo apt-get install netcdf"
     - "pip install -r requirements.txt"
 
 script: "py.test"
